@@ -24,7 +24,7 @@ search_button = driver.find_element_by_id('gh-btn')
 search_button.click()
 
 # Verifying by eBay item number
-expected_eBay_item_number = 261972139580  # This is wrong value to fail the test. The correct one is 261972139580
+expected_eBay_item_number = 261972139581  # This is wrong value to fail the test. The correct one is 261972139580
 time.sleep(4)
 eBay_item_number = driver.find_element_by_id('descItemNumber')
 number = eBay_item_number.text
