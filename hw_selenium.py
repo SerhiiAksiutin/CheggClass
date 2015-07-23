@@ -24,7 +24,7 @@ search_button = driver.find_element_by_id('gh-btn')
 search_button.click()
 
 # Verifying by eBay item number
-expected_eBay_item_number = 261972139581  # This is wrong value to fail the test. The correct one is 261972139580
+expected_eBay_item_number = 261972139580  # This is wrong value to fail the test. The correct one is 261972139580
 time.sleep(4)
 eBay_item_number = driver.find_element_by_id('descItemNumber')
 number = eBay_item_number.text
@@ -33,6 +33,6 @@ print('=  %s =' % (number))
 print('=================')
 
 if int(number) == expected_eBay_item_number:
-    print('Hooray! My first webdriver test passed')
+    print('Hooray! My first webdriver test has passed')
 else:
     raise Exception('Oops, something is wrong. Please review your code')
